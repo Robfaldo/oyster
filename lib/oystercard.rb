@@ -12,6 +12,10 @@ class Oystercard
     @balance += amount
   end
 
+  def deduct(amount) 
+    @balance -= amount
+  end
+
   def max_limit
     "Max limit is £#{@max_balance}"
   end
